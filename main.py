@@ -79,7 +79,7 @@ def text_cleaning(text, remove_stop_words=True, lemmatize_words=False):
 
     return text
 
-@app.get("/predict-tags")
+@app.post("/predict-tags")
 def predict_tags(tags: str):
     cleaned_tags = text_cleaning(tags)
     text_vector_use = feature_USE_fct([cleaned_tags])
