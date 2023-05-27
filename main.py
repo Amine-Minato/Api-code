@@ -37,11 +37,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model_path = '/content/drive/My Drive/IML OPENCLASSROOMS/PROJET_5/saved_model.pkl'
-with open(model_path, 'rb') as f:
+
+with open('saved_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
-with open('/content/drive/My Drive/IML OPENCLASSROOMS/PROJET_5/mlb.pkl', 'rb') as f:
+with open('mlb.pkl', 'rb') as f:
     mlb = pickle.load(f)
 
 
