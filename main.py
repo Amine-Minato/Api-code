@@ -16,7 +16,7 @@ def initialize_nltk_resources():
 
 stop_words, lemmatizer = initialize_nltk_resources()
 
-#embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
+embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 
 app = FastAPI(
     title="Suggestion Tags API",
