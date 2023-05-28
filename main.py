@@ -8,6 +8,8 @@ import tensorflow_hub as hub
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 def initialize_nltk_resources():
     stop_words = set(stopwords.words('english'))
