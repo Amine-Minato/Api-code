@@ -1,5 +1,8 @@
-fastapi==0.68.1
-uvicorn==0.15.0
-nltk==3.6.2
+FastAPI==0.73.0
+nltk==3.6.3
+pyngrok==5.2.0
 tensorflow-hub==0.12.0
-pyngrok==5.1.0
+uvicorn==0.15.0
+gunicorn==20.1.0
+tensorflow-cpu==2.12.0
+starlette==0.17.1
