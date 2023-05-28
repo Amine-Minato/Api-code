@@ -69,6 +69,9 @@ def text_cleaning(text, remove_stop_words=True, lemmatize_words=False):
     
     return text
 
+@app.get("/")
+def home():
+    return "bienvenue dans mon api"
 
 @app.get("/predict-tags")
 def predict_tags(tags: str):
